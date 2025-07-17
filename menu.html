@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Classy Bites | Menu</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Our Menu</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <section class="categories">
+    <div class="category-card" onclick="addToCart('Pepperoni Pizza')">
+      <img src="images/pizza.jpg" alt="Pizza">
+      <h3>Pepperoni Pizza - $12</h3>
+      <button>Add to Cart</button>
+    </div>
+    <div class="category-card" onclick="addToCart('Cheese Burger')">
+      <img src="images/burger.jpg" alt="Burger">
+      <h3>Cheese Burger - $8</h3>
+      <button>Add to Cart</button>
+    </div>
+    <div class="category-card" onclick="addToCart('Chocolate Cake')">
+      <img src="images/dessert.jpg" alt="Desserts">
+      <h3>Chocolate Cake - $6</h3>
+      <button>Add to Cart</button>
+    </div>
+  </section>
+
+  <footer>© 2025 Classy Bites</footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
