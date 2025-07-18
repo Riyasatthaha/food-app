@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Classy Bites | Menu</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
@@ -17,29 +17,26 @@
   </header>
 
   <section class="categories">
-    <div class="category-card"   
-      <img src="pizza.jpg" height="200" alt="Pizza">
-      <h3>Pepperoni Pizza - 480 rs</h3>
-      <button onclick="addToCart('Pepperoni Pizza', 480, 'pizza.jpg')">Add to Cart</button>
-      
+    <div class="category-card" onclick="addToCart('Pepperoni Pizza')">
+      <img src="images/pizza.jpg" alt="Pizza">
+      <h3>Pepperoni Pizza - </h3>
+      <button>Add to Cart</button>
     </div>
-    <div class="category-card"     
-      <img src="burger.jpeg" height="200" alt="Burger">
-      <h3>Cheese Burger - 320 rs</h3>
-      <button onclick="addToCart('cheese burger', 380, 'burger.jpeg')">Add to Cart</button>
-      
-
+    <div class="category-card" onclick="addToCart('Cheese Burger')">
+      <img src="images/burger.jpg" alt="Burger">
+      <h3>Cheese Burger - $8</h3>
+      <button>Add to Cart</button>
     </div>
-    <div class="category-card"    
-      <img src="brownie.jpg" height="200" alt="brownies">
-      <h3>brownies - 110 rs</h3>
-<button onclick="addToCart('brownie', 110, 'brownies.jpg')">Add to Cart</button>
+    <div class="category-card" onclick="addToCart('Chocolate Cake')">
+      <img src="images/dessert.jpg" alt="Desserts">
+      <h3>Chocolate Cake - $6</h3>
+      <button>Add to Cart</button>
     </div>
   </section>
 
   <footer>© 2025 Classy Bites</footer>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
-  
 </html>
+
