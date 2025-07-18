@@ -1,9 +1,16 @@
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
+const foodItems = [
+  { name: "Pepperoni Pizza", price: 300, image: "pizza.jpg" },
+  { name: "Cheese Burger", price: 210, image: "burger.jpeg" },
+  { name: "Chocolate brownie", price: 90, image: "brownie.jpg" }
+];
+
 function addToCart(item) {
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
   cart.push(item);
-  localStorage.setItem('cart', JSON.stringify(cart));
-  alert(`items added to cart!`);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  alert(`${item.name} added to cart!`);
 }
 
 function displayCart() {
