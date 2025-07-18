@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Classy Bites | Checkout</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Checkout</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <section class="checkout-form">
+    <form onsubmit="placeOrder(event)">
+      <label>Name:</label><br>
+      <input type="text" id="name" required><br><br>
+
+      <label>Address:</label><br>
+      <textarea id="address" required></textarea><br><br>
+
+      <label>Payment Option:</label><br>
+      <select id="payment" required>
+        <option value="">Select Payment</option>
+        <option value="COD">Cash on Delivery</option>
+        <option value="Card">Card Payment</option>
+      </select><br><br>
+
+      <button type="submit">Place Order</button>
+    </form>
+  </section>
+
+  <footer>© 2025 Classy Bites</footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
