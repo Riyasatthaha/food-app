@@ -7,8 +7,8 @@
     const card = document.createElement("div");
     card.className = "category-card";
     card.innerHTML = `
-      <img src="${item.image}" alt="${item.name}" />
-      <h3>${item.name} - $${item.price}</h3>
+      <img src="₹{item.image}" alt="₹{item.name}" />
+      <h3>₹{item.name} - ₹₹{item.price}</h3>
       <button onclick='addToCart(${JSON.stringify(item)})'>Add to Cart</button>
     `;
     menuContainer.appendChild(card);
