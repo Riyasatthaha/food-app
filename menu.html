@@ -37,25 +37,5 @@
   <footer>© 2025 Classy Bites</footer>
   
   
-  <section class="categories" id="menu-list"></section>
-<script src="script.js"></script>
-<script>
-  const menuContainer = document.getElementById("menu-list");
-
-  foodItems.forEach(item => {
-    const card = document.createElement("div");
-    card.className = "category-card";
-    card.innerHTML = `
-      <img src="₹{item.image}" alt="₹{item.name}" />
-      <h3>₹{item.name} - ₹₹{item.price}</h3>
-      <button onclick='addToCart(${JSON.stringify(item)})'>Add to Cart</button>
-    `;
-    menuContainer.appendChild(card);
-  });
-</script>
-
-
-  <script src="script.js"></script>
-</body>
-</html>
+ 
 
