@@ -1,4 +1,43 @@
-<section class="categories" id="menu-list"></section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Classy Bites | Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Our Menu</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <section class="categories">
+    <div class="category-card" onclick="addToCart('Pepperoni Pizza')">
+      <img src="pizza.jpg" alt="Pizza">
+      <h3>Pepperoni Pizza - ₹300 </h3>
+      <button>Add to Cart</button>
+    </div>
+    <div class="category-card" onclick="addToCart('Cheese Burger')">
+      <img src="burger.jpeg" alt="Burger">
+      <h3>Cheese Burger - ₹210</h3>
+      <button>Add to Cart</button>
+    </div>
+    <div class="category-card" onclick="addToCart('Chocolate Cake')">
+      <img src="brownie.jpg" alt="Desserts">
+      <h3>Chocolate brownie - ₹90</h3>
+      <button>Add to Cart</button>
+    </div>
+  </section>
+
+  <footer>© 2025 Classy Bites</footer>
+  
+  
+  <section class="categories" id="menu-list"></section>
 <script src="script.js"></script>
 <script>
   const menuContainer = document.getElementById("menu-list");
