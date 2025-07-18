@@ -10,7 +10,7 @@ function addToCart(item) {
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
   cart.push(item);
   localStorage.setItem("cart", JSON.stringify(cart));
-  alert(`${item.name} added to cart!`);
+  alert(`₹{item.name} added to cart!`);
 }
 
 function displayCart() {
@@ -27,10 +27,10 @@ function displayCart() {
     const div = document.createElement('div');
     div.className = 'category-card';
     div.innerHTML = `
-      <img src="${item.image}" alt="${item.name}" style="width:100px; height:80px;"><br>
-      <h3>${item.name}</h3>
-      <p>Price: $${item.price}</p>
-      <button onclick="removeFromCart(${index})">Remove</button>
+      <img src="₹{item.image}" alt="₹{item.name}" style="width:100px; height:80px;"><br>
+      <h3>₹{item.name}</h3>
+      <p>Price: ₹₹{item.price}</p>
+      <button onclick="removeFromCart(₹{index})">Remove</button>
     `;
     cartContainer.appendChild(div);
   });
