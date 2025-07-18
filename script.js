@@ -3,7 +3,7 @@ let cart = JSON.parse(localStorage.getItem('cart')) || [];
 function addToCart(item) {
   cart.push(item);
   localStorage.setItem('cart', JSON.stringify(cart));
-  alert(`rs {item} added to cart!`);
+  alert(`items added to cart!`);
 }
 
 function displayCart() {
@@ -48,7 +48,7 @@ function placeOrder(event) {
     return;
   }
 
-  localStorage.removeItem('cart');  // Clear cart after order
+  localStorage.removeItem('cart');
   alert('Order Placed Successfully!');
   window.location.href = 'order.html';
 }
