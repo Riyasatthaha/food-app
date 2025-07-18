@@ -8,22 +8,27 @@ function addToCart(item) {
 
 function displayCart() {
   const cartContainer = document.getElementById('cart-items');
-  if (!cartContainer) return;
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
   cartContainer.innerHTML = '';
+
   if (cart.length === 0) {
     cartContainer.innerHTML = '<p>Your cart is empty.</p>';
     return;
   }
+
   cart.forEach((item, index) => {
     const div = document.createElement('div');
     div.className = 'category-card';
     div.innerHTML = `
-      <h3>rs {item}</h3>
+      <img src="${item.image}" alt="${item.name}" style="width:100px; height:80px;"><br>
+      <h3>${item.name}</h3>
+      <p>Price: $${item.price}</p>
       <button onclick="removeFromCart(${index})">Remove</button>
     `;
     cartContainer.appendChild(div);
   });
 }
+
 
 function removeFromCart(index) {
   cart.splice(index, 1);
