@@ -38,3 +38,20 @@ function removeFromCart(index) {
 function checkout() {
   window.location.href = 'checkout.html';
 }
+
+function placeOrder(event) {
+  event.preventDefault();
+
+  const name = document.getElementById('name').value.trim();
+  const address = document.getElementById('address').value.trim();
+  const payment = document.getElementById('payment').value;
+
+  if (!name || !address || !payment) {
+    alert('Please fill in all fields.');
+    return;
+  }
+
+  localStorage.removeItem('cart');  
+  alert('Order Placed Successfully!');
+  window.location.href = 'order.html';
+}
